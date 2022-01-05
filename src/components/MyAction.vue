@@ -1,5 +1,6 @@
 <template>
   <button v-on:click="showInfo">点我</button>
+  <el-button type="primary">主要按钮</el-button>
 </template>
 
 <script>
