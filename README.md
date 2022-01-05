@@ -26,8 +26,10 @@ npm install webpack-cli
 
 ##### Vue基础
 
+######  props
+
 ```javascript
-## 配置 propos 
+## 配置 props 
    功能：接收外部传入的数据
      1. 传递数据
        <Student name="Zhang San"/>
@@ -55,5 +57,36 @@ npm install webpack-cli
                 default:'男'
               }
             }
+```
+
+
+
+###### Vue的件事处理
+
+```javascript
+  <button @click="showInfo">点我</button>
+  <button v-on:click="showInfo2" >点我</button>、
+```
+
+
+
+MyAction Vue component
+
+```javascript
+<template>
+  <button v-on:click="showInfo">点我</button>
+</template>
+
+<script>
+export default {
+  name: "MyAction",
+  methods:{
+    showInfo(){
+      alert("点我 点我！")
+      console.log("click....")
+    }
+  }
+}
+</script>
 ```
 
