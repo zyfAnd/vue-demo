@@ -1,19 +1,21 @@
 <template>
   <div id="app">
-    <School school-name="清华"/>
-    <Student student-name="张三" student-age="18"/>
+    <Student name="li san" age="19" gender=" male"/>
+    <hr>
+    <Student name="zhang san" age="20" gender=" female"/>
+    <hr>
+    <Student name="li si" age="18" gender=" male"/>
   </div>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-import School  from "@/components/School";
+
 import Student from "@/components/Student";
 export default {
   name: 'App',
   components: {
-    Student,
-    School
+    Student
   }
 }
 </script>

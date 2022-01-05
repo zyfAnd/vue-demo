@@ -13,6 +13,6 @@ new Vue({
   //
   el: '#app',
   render: h => h(App)
-  //讲App 放入容器
+  //将App 放入容器
 })
 
