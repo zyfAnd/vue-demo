@@ -4,7 +4,7 @@
     <hr>
     <Student name="zhang san" age="20" gender=" female"/>
     <hr>
-    <Student name="li si" age="18" gender=" male"/>
+    <Student name="li si" age="18" />
   </div>
 </template>
 

@@ -1,24 +1,59 @@
-# vue-demo
+### Vue
 
-## Project setup
-```
-npm install
-```
+##### 学习网站
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+| Vue官网      | https://cn.vuejs.org/v2/guide/                   |
+| ------------ | ------------------------------------------------ |
+| 表严肃       | https://biaoyansu.com/22.9                       |
+| B站kuangshen | https://www.bilibili.com/video/BV18E411a7mC?p=13 |
+|              |                                                  |
 
-### Compiles and minifies for production
-```
-npm run build
-```
+##### 安装Webpack
 
-### Lints and fixes files
-```
-npm run lint
+```shell
+npm install webpack -g
+npm install webpack-cli 
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+##### 脚手架创建项目
+
+项目的结构分析
+
+- src
+-
+
+##### Vue基础
+
+```javascript
+## 配置 propos 
+   功能：接收外部传入的数据
+     1. 传递数据
+       <Student name="Zhang San"/>
+     2. 接收数据
+        2.1 第一种方式
+             props:['name','gae']
+        2.3 第二种方式
+             props:{
+               name: String,
+               age: Number
+               gender: String
+             }
+        2.4 第三种方式
+            props:{
+              name: {
+                type: String, //限制数据类型
+                required: true //这个字段必传
+              },
+              age:{
+                type: Number,
+                required: false
+              },
+              gender: {
+                type: String,
+                default:'男'
+              }
+            }
+```
+
